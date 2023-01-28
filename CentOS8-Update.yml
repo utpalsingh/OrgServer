@@ -1,9 +1,10 @@
 ---
-- name: initializing software package update
-  hosts: centos8
+  - name: Initializing interface onfiguration on cisco switch
+    hosts: centos8
+    gather_facts: no
 
-  tasks:
-    - name: Upgrade all packages
-      ansible.builtin.dnf:
-        name: "*"
-        state: latest
+    tasks:
+      - name: Upgrade all packages
+        ansible.builtin.dnf:
+          name: "*"
+          state: latest
