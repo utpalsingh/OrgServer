@@ -1,6 +1,6 @@
 ---
   - name: Initializing OS && farmware packages update
-    hosts: centos8group
+    hosts: awxnode1
     gather_facts: no
 
     tasks:
