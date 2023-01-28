@@ -1,6 +1,9 @@
 ---
-tasks:
-  - name: Upgrade all packages
-    ansible.builtin.dnf:
-      name: "*"
-      state: latest
+- name: initializing software package update
+  hosts: centos8
+
+  tasks:
+    - name: Upgrade all packages
+      ansible.builtin.dnf:
+        name: "*"
+        state: latest
