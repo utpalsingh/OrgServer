@@ -1,5 +1,5 @@
 ---
-  - name: Initializing interface onfiguration on cisco switch
+  - name: Initializing OS && farmware packages update
     hosts: centos8group
     gather_facts: no
 
