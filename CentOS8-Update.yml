@@ -1,6 +1,6 @@
 ---
   - name: Initializing interface onfiguration on cisco switch
-    hosts: centos8
+    hosts: centos8group
     gather_facts: no
 
     tasks:
